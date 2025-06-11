@@ -1,0 +1,77 @@
+HTML (Hypertext Markup Language) defines the content and structure of a webpage. 
+It uses a system of tags to mark up text, images, and other content. 
+
+HyperText: refers to the pieces of text that are linked together, allowing users to navigate between different pages or sections of a document. It is a text that is linked via a hyperlink.
+
+Markup Language: refers to the way HTML uses tags to annotate text, images, and other content. These tags provide instructions to the web browser on how to display the content (markup is done via HTML tags).
+
+1. Document Structure
+<!DOCTYPE html> – Defines the document type (HTML5)
+<html> – Root element of an HTML document
+<head> – Contains meta-information (e.g., title, charset, CSS links)
+<title> – Title shown in the browser tab
+<body> – Contains all visible content
+
+
+2. Headings & Text
+<h1> to <h6> – Headings (h1 is most important, h6 is least)
+<p> – Paragraph
+<br> – Line break
+<hr> – Horizontal rule (line)
+
+
+3. Text Formatting
+<strong> – Bold (semantic)
+<em> – Italic (semantic)
+<b> – Bold (visual only)
+<i> – Italic (visual only)
+<u> – Underline
+<small> – Smaller text
+<mark> – Highlighted text
+
+
+4. Links & Media
+<a> – Anchor (hyperlink)
+<img> – Image
+<video> – Embed video
+<audio> – Embed audio
+<source> – Media source file (for <video> or <audio>)
+
+
+5. Lists
+<ul> – Unordered list (bullets)
+<ol> – Ordered list (numbers)
+<li> – List item
+
+
+6. Tables
+<table> – Table
+<tr> – Table row
+<td> – Table data cell
+<th> – Table header
+<thead>, <tbody>, <tfoot> – Table sections
+
+
+7. Forms
+<form> – Form element
+<input> – Input field (text, checkbox, radio, etc.)
+<textarea> – Multi-line input
+<select> – Dropdown menu
+<option> – Option inside select
+<label> – Label for input
+<button> – Clickable button
+
+
+8. Containers & Layout
+<div> – Generic block-level container
+<span> – Generic inline container
+<section> – Section of content
+<article> – Self-contained content (like blog post)
+<header>, <footer>, <nav>, <main> – Semantic layout tags
+
+
+9. Meta & Links (in <head>)
+<meta> – Metadata (e.g., charset, viewport)
+<link> – Link to external resources (like CSS)
+<style> – Embedded CSS
+<script> – JavaScript
