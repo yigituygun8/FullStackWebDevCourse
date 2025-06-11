@@ -1,0 +1,8 @@
+When you visit a website, your browser sends a request to the server where the website is hosted. The server processes this request and sends back the necessary files (HTML, CSS, JS) to your browser. Your browser then interprets these files and renders the website for you to view and interact with.
+
+The data we receive from the server consists of 3 types of files:
+1) HTML 2) CSS 3) JavaScript
+
+HTML: responsible for content of the website. raw materials that make up the website.
+CSS: responsible for styling your website.
+JS: responsible for interactivity of the website. allows the website to actually do things. Turns your static website into a dynamic one.

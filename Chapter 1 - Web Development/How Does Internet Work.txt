@@ -1,0 +1,10 @@
+Client (you as a browser) send your message to your ISP 
+ISP relays that message to DNS server (domain name system)
+DNS server will look into the database to find the exact IP address that you are looking for
+PS: Every single computer that is connected to Internet has a unique IP address
+Once the IP address is found, it will be sent back to you through your ISP over the Internet so that you can make a direct request
+
+Sum up:
+Internet is a bunch of wires and cables that connect computers together.
+There are undersea cables that connect continents.
+(check submarine cables map).
