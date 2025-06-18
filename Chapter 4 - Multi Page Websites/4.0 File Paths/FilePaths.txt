@@ -1,0 +1,14 @@
+A unique location for a file or folder on your computer.
+
+A file path can direct you to a specific file or folder, and it can be absolute or relative.
+
+Root: Hard Drive (usually C:\)
+Absolute Path: C:\Users\YourName\Documents\file.txt (relative to the root)
+Relative Path: Documents\file.txt (related to the current directory)
+
+For web development, relative file path is more useful than absolute file path. We want to bring up an image, sound, movie or another HTML file, we usually use a relative file path.
+
+Special Characters to Navigate File Paths:
+.. : Move up one directory level (go up a level)
+. : Current directory (stay in the same directory)
+

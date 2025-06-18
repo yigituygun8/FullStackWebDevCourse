@@ -1,0 +1,21 @@
+Good Article for HTML5 Boilerplate Template:
+https://www.freecodecamp.org/news/basic-html5-template-boilerplate-code-example/
+
+There is a structure of HTML file
+
+<!DOCTYPE html> -> tells the browser which version of HTML to use (in this case, HTML5)
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> -> specifies the character encoding for the HTML document (UTF-8 is a common encoding that supports most characters)
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -> makes the website responsive by setting the viewport width to the device width and initial zoom level to 1
+        <title>Document</title> -> sets the title of the document, which appears in the browser tab
+        <link rel="stylesheet" href="styles.css"> -> links to an external CSS file for styling the HTML document
+    </head> -> contains meta-information about the document, such as the title, character set, and links to stylesheets or scripts (doesn't include visible content, includes info for computer)
+    <body>
+        <h1>Hello World</h1>
+        ...
+        ...
+        <script src="script.js"></script> -> links to an external JavaScript file for adding interactivity to the HTML document
+    </body> -> all of the content of the website goes here, such as text, images, links, etc. (visible content for users)
+</html> -> the root element of the HTML document, everyting is inside this tag
