@@ -1,0 +1,33 @@
+/*
+There are 3 ways of adding CSS to our HTML:
+1. Inline CSS
+2. Internal CSS
+3. External CSS
+
+Inline CSS: <tag style="CSS" />
+- CSS is written directly in the HTML file using the style attribute.
+- It is used to style a specific element or testing a style before adding it to the CSS file.
+- It is not recommended to use inline CSS because it is not reusable and makes the code harder to maintain.
+
+Internal CSS: <style>CSS</style>
+- CSS is written in the head section of the HTML file.
+- It is used to style the entire website.
+- It is more efficient than inline CSS.
+
+External CSS: <link rel="stylesheet" href="style.css" />
+- CSS is written in a separate file with a .css extension.
+- It is used to style the entire website.
+- It is more efficient than inline CSS and internal CSS.
+
+| Type of CSS      | Where written                      | Recommended for                  |
+| ---------------- | ---------------------------------- | -------------------------------- |
+| **Inline CSS**   | Directly on the element            | Small changes, testing           |
+| **Internal CSS** | Inside `<style>` tags in HTML file | Small projects, one-page styling |
+| **External CSS** | In a separate `.css` file          | Big projects, reusable styling   |
+*/
+
+h1{
+    color: green
+}
+
+
