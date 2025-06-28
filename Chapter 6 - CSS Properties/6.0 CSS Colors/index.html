@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Colors</title>
+    <style>
+      html {
+        background-color: antiquewhite;
+      }
+      h1 {
+        color: whitesmoke;
+        background-color: darkseagreen;
+        opacity: 0.5;
+        /*Note: When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency.
+      This can make the text inside a fully transparent element hard to read.*/
+      }
+      h2 {
+        color: #faf8f1;
+        background-color: rgba(197, 137, 64, 0.7);
+        background-image: linear-gradient(to right, #c58940, #faf8f1);
+      }
+      p {
+        color: white;
+        background-image: url("istockphoto-1616897621-640x640.jpg");
+      }
+      /*
+      body {
+        background: #ffffff url("img_tree.png") no-repeat right top;
+      }
+      When using the shorthand property the order of the property values is:
+      background-color
+      background-image
+      background-repeat
+      background-attachment
+      background-position
+            
+      */
+    </style>
+  </head>
+
+  <body>
+    <h1>Hello</h1>
+    <h2>World</h2>
+    <p>This paragraph has a background image!</p>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+Font Sizes:
+- Pixel: 1px (1/96 of an inch)
+- Point: 1pt (1/72 of an inch)
+- em: 1em (relative to the parent element) (%100% of the parent element's font size):
+    em = desired element pixel value / parent element font-size in pixels
+    moves relative to the parent's font size, which is important for responsive design.
+- rem: 1rem (relative to the root element) (%100% of the root element's font size):
+    rem = desired element pixel value / root element font-size in pixels
+    if only the root element's font size is changed, all rem values will adjust accordingly.
+    rem is useful for maintaining consistent sizing across the entire document.
+
+rem is often preferred over em for global consistency, as it is not affected by the font size of parent elements.
+(it can get confusing when using em, especially in nested elements and working with different CSS files)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Font-Size</title>
+    <style>
+      #pixel {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #point {
+        font-size: 20pt;
+      }
+
+      #em {
+        font-size: 1em;
+      }
+
+      #rem {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 12pt;
+      }
+
+      html {
+        font-size: xx-large; /* This sets the root font size */
+      }
+    </style>
+  </head>
+
+  <body>
+    <p id="pixel">1 Pixel is 1/96 of an Inch</p>
+    <p id="point">1 Point is 1/72 of an Inch</p>
+    <footer>
+      <p id="em">1em is 100% the size of the parent element</p>
+      <p id="rem">1rem is 100% the size of the root element</p>
+    </footer>
+  </body>
+</html>
