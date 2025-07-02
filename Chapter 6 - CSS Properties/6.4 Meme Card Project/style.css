@@ -1,0 +1,24 @@
+body{
+    background-color: black;
+}
+
+.poster{
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    /*centering div*/
+    width: 50%;
+    margin-left: 25%;
+}
+
+p{
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.dog-pic{
+    border: 5px solid white;
+}
