@@ -1,0 +1,47 @@
+Four categories which we look at to determine the level of importance:
+1) Position: the one at the lower part replaces the upper part.
+
+    e.g.
+        li{
+            color: green;
+            color: red; // red wins
+        }
+
+    e.g.
+        li{
+            color: green;
+            color: red;
+        }
+        li{
+            color: blue; // blue wins because li as a whole is below the other li.  
+        }
+
+2) Specifity:
+
+    | **Priority**                  | **Example**                  | **Description**                                                                 |
+    |-------------------------------|------------------------------|---------------------------------------------------------------------------------|
+    | Inline style                  | `<h1 style="color: pink;">`  | Highest priority, directly applied with the `style` attribute                   |
+    | ID selectors                  | `#navbar`                    | Second highest priority, identified by the unique `id` attribute of an element |
+    | Classes and pseudo-classes    | `.test`, `:hover`            | Third highest priority, targeted using class names or pseudo-classes           |
+    | Attribute selectors           | `[type="text"]`              | Low priority, applies to attributes (attribute = class in priority, lower one wins)                                             |
+    | Elements and pseudo-elements  | `h1`, `::before`, `::after`  | Lowest priority, applies to HTML elements and pseudo-elements                  |
+
+3) Type:
+
+    Three types of origins:
+    1. User agent styles: These are the default styles applied by the browser.
+    2. User styles: These are styles defined by the user, often through browser settings
+    3. Author styles: These are styles defined by the web developer in the CSS files or inline styles.
+    
+    - User agent styles are the lowest priority, followed by user styles, and finally author styles which have the highest priority.
+    - In author styles:
+        Inline styles > internal styles > external styles
+
+4) Importance:
+
+    color: red;
+    color: green !important;
+
+Priority:
+Importance > Type/Origin > Specifity > Position
+
