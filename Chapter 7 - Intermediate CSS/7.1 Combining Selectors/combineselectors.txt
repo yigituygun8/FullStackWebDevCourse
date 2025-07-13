@@ -1,0 +1,89 @@
+Group Rule: Apply to both selectors
+
+selector, selector, ...{
+  property: value;
+}
+
+example:
+.className, h2, #idName{
+  color: purple;
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+Child Selector: Apply to direct descendant(child), one level down!
+PS: Direct children means elements that are immediately inside a parent, not nested further down.
+<ul>
+  <li>Direct child 1</li>         <!-- Direct child of ul -->
+  <li>Direct child 2</li>         <!-- Direct child of ul -->
+  <li>
+    <ul>
+      <li>Nested child</li>       <!-- NOT a direct child of the first ul, but of the nested ul -->
+    </ul>
+  </li>
+</ul>
+
+parentSelector > childSelector{
+  property: value;
+}
+
+example:
+ul > li{ // explanation: only applies to li that are direct children of ul
+  color: green;
+}
+
+
+------------------------------------------------------------------------------------------------------------------
+
+Descendant Selector: Apply to all descendants, no matter how deep they are nested.
+
+ancestorSelector descendantSelector{ // no comma, single space only 
+  property: value;
+}
+
+example:
+div p { // explanation: selects ALL <p> elements that are inside a <div>, no matter how deeply nested
+  color: blue;
+}
+
+/*
+HTML Example (for reference):
+
+<div>
+  <p>This paragraph is a direct child of div and will be blue.</p>
+  <section>
+    <p>This paragraph is nested inside a section, which is inside a div, and will also be blue.</p>
+  </section>
+</div>
+*/
+
+------------------------------------------------------------------------------------------------------------------
+
+Chain Selector: Apply where ALL selectors are true, meaning all conditions must be met. (very specific)
+
+selectorselector{
+  property: value;
+}
+. for classes
+# for IDs
+nothing infront of elements
+
+always start with element.
+
+example:
+h1#idName.className{
+  color: red;
+}
+
+------------------------------------------------------------------------------------------------------------------
+
+Combining Combiners: Using different combinators (listed above) together to create complex selectors.
+
+selector1 selector2, selector3 > selector4{
+  property: value;
+}
+or maybe
+
+ancestorSelector selectorselectorchain{
+  property: value;
+} and so on...
