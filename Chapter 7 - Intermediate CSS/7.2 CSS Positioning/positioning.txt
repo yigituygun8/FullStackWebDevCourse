@@ -1,0 +1,41 @@
+The position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky)
+
+position: static → default value, elements are positioned according to the normal flow of the document. You cannot use top, right, bottom, or left with it — they will have no effect.
+
+position: relative → stays in the flow but can be moved with top, left, etc.
+                     An element with position: relative; is positioned relative to its default (static) position.
+                     Setting the top, right, bottom, and left properties of a relatively-positioned element will cause it to be adjusted away from its normal position. 
+                     Other content will not be adjusted to fit into any gap left by the element.
+
+position: absolute → positioned relative to the nearest positioned ancestor or top left of the viewport if no positioned ancestor exists.
+                     Note: Absolute positioned elements are removed from the normal flow, and can overlap elements.
+
+position: fixed → taken out of the flow and positioned relative to the viewport (browser window), which means it always stays in the same place even if the page is scrolled.
+
+position: sticky → positioned based on the user's scroll position.
+                   acts like relative, but becomes fixed when scrolling.
+                   Note: You must specify at least one of top, right, bottom or left for sticky positioning to work.
+
+PS: Positioned Ancestor = Any Parent That Has a Position Other Than Static (default) position.
+https://appbrewery.github.io/css-positioning/ -> demo website for CSS positioning
+
+
+Z-Index:
+The z-index property specifies the stack order of an element.
+When elements are positioned, they can overlap other elements.
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+An element can have a positive or negative stack order
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) 
+and flex items (elements that are direct children of display: flex elements).
+
+Note: If two positioned elements overlap each other without a z-index specified, the element defined last in the HTML code will be shown on top.
+
+
+| Position Type | Removed from Flow? | Sticks on Scroll?        | Common Uses                                  |
+| ------------- | ------------------ | ---------------------    | -------------------------------------------- |
+| `static`      | ❌ No               | ❌ No                  | Normal layout                                |
+| `relative`    | ❌ No               | ❌ No                  | Slight offsets, parent for absolute children |
+| `absolute`    | ✅ Yes              | ❌ No                  | Tooltips, overlays, floating menus           |
+| `fixed`       | ✅ Yes              | ✅ Yes (to viewport)   | Sticky navbars, floating buttons             |
+| `sticky`      | ❌ No               | ✅ Yes (within parent) | Section headers, scroll-aware items          |
