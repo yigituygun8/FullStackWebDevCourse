@@ -1,0 +1,46 @@
+Demo website for display: https://appbrewery.github.io/css-display/
+
+CSS Display Property: the most important CSS property for controlling layout.
+
+The display property is used to specify how an element is shown on a web page.
+
+Every HTML element has a default display value, depending on what type of element it is. 
+The default display value for most elements is block or inline.
+
+The display property is used to change the default display behavior of HTML elements.
+
+| **Display Value**         | **Description**                                                          | **Common Use Cases**                                  |
+| ------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------- |
+| `block`                   | Element takes up full width, starts on a new line.                       | `<div>`, `<section>`, `<p>`, layout containers        |
+| `inline`                  | Element flows with text, doesn’t break line. Width/height not respected. | `<span>`, inline links, icons in text                 |
+| `inline-block`            | Like `inline`, but width/height/padding/margin work like `block`.        | Buttons, small components inside text                 |
+| `none`                    | Hides the element completely (removes it from layout).                   | Toggle elements (menus, modals, tabs, etc.)           |
+| `flex`                    | Enables flexbox layout on container. Children become flex items.         | Responsive layouts, navbars, aligning elements        |
+| `inline-flex`             | Same as `flex`, but behaves like `inline` container.                     | Inline layout with flex behavior                      |
+| `grid`                    | Enables grid layout on container. Children become grid items.            | Complex layouts, dashboards, image galleries          |
+| `inline-grid`             | Same as `grid`, but container behaves like an inline element.            | Inline grids (rare use case)                          |
+| `table`                   | Behaves like an HTML `<table>`.                                          | Table-style layout (rarely used now due to flex/grid) |
+| `table-row`, `table-cell` | Behaves like a table row or cell.                                        | Custom table layouts, fallback designs                |
+| `contents`                | Makes container disappear but keeps its children in the DOM layout.      | Rare use, useful for accessible layout tweaks         |
+| `inherit`                 | Inherits `display` value from parent.                                    | Inheritance logic if needed                           |
+| `initial`                 | Resets to default value (`inline` for most elements).                    | Resetting styles                                      |
+| `revert`                  | Reverts to user-agent or browser stylesheet value.                       | Undoing overridden styles                             |
+
+
+Block-Level Elements:
+- Elements that take up the full width available and start on a new line.
+- Examples: <div>, <p>, <h1> to <h6>, <section>, <article>, <form>, <header>, <footer>
+
+Inline Elements: 
+- Elements that do not start on a new line and only take up as much width as necessary.
+- You cannot set width or height because they will default to the size of their content.
+- Examples: <span>, <a>, <img>
+
+Inline-Block Elements:
+- Elements that are formatted like inline elements (go on same line) but can have width and height set (block property).
+- Examples: <button>, <input>, <label>
+
+None Display:
+- Makes the element disappear completely from the page.
+- Use case: button that hides something when clicked or to-do list, etc.
+
