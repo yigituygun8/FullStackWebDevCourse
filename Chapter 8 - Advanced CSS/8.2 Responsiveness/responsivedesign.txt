@@ -1,0 +1,32 @@
+https://www.w3schools.com/css/css_rwd_intro.asp
+
+Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones)
+
+How To Create Responsive Websites?:
+1) Media Queries: rule to include a block of CSS properties only if a certain condition is true.
+
+    @media (max-width: 600px) {
+      /* Styles for devices with a max-width of 600px */
+    }
+
+    Typical Breakpoints: (Breakpoints are the widths at which the layout of a website changes to accommodate different screen sizes)
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {...}
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {...}
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {...}
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {...}
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {...}
+
+
+2) CSS Grid: Many web pages are based on a grid-view, which means that the page is divided into rows and columns. It makes it easier to place elements on the page.
+
+3) CSS Flexbox: A one-dimensional layout method for laying out items in rows OR columns. It allows for responsive design by adjusting the size and position of elements based on available space.
+4) External Frameworkds (like Bootstrap): Frameworks like Bootstrap provide pre-designed components and a grid system that makes it easier to create responsive designs without starting from scratch.

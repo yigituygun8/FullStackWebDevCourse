@@ -1,0 +1,8 @@
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries -> for detailed info and different types of conditions
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+Media queries allow you to apply CSS styles depending on:
+    a device's media type (such as print vs. screen),
+    other features or characteristics such as screen resolution orientation, aspect ratio, browser viewport width or height, 
+    user preferences such as preferring reduced motion, data usage, or transparency.
