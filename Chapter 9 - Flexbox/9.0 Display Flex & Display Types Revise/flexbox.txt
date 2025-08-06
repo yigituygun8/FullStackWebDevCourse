@@ -1,0 +1,19 @@
+Float is great when you want to float an image to the left or the right of a block text to wrap it. 
+But don't use floats for layouts.
+Instead, use Flexbox for overall page structure.
+
+Flexbox:
+Flexbox is a layout method for arranging items in rows or columns.
+Fexbox makes it easier to design a flexible responsive layout structure, without using float or positioning.
+Flexbox layout should be used for 1D layout (rows OR columns)
+
+A flexbox always consists of:
+    A Flex Container - the parent (container) <div> element with display property set to "flex"
+    Flex Items - the items inside the container <div>
+
+Let's say you have different elements by default display (e.g. div -> block, span -> inline, p -> block, img -> inline, etc.),
+if you enclose those elements to a flexbox, then all previous display values will be ignored,
+everything will be laid out by Flexbox. Width of each element will normally be based on content size.
+
+display: flex -> create flexbox, %100 width, occupying the line
+display: inline-flex -> sets the width as much as the container needs and other things can also go and occupy the same line
