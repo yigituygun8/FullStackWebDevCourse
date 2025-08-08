@@ -17,3 +17,11 @@ everything will be laid out by Flexbox. Width of each element will normally be b
 
 display: flex -> create flexbox, %100 width, occupying the line
 display: inline-flex -> sets the width as much as the container needs and other things can also go and occupy the same line
+
+The CSS properties we use for the flex container are:
+    flex-direction
+    flex-wrap
+    flex-flow
+    justify-content
+    align-items
+    align-content
