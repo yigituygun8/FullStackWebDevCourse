@@ -1,0 +1,19 @@
+"align-self" property specifies the alignment for the selected item inside the flexible container.
+
+align-self property overrides the default alignment set by the container's align-items property.
+
+Align the third flex item in the middle of the container:
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="align-self: center">3</div>
+  <div>4</div>
+</div>
+
+Align the second flex item at the top of the container, and the third flex item at the bottom of the container:
+<div class="flex-container">
+  <div>1</div>
+  <div style="align-self: flex-start">2</div>
+  <div style="align-self: flex-end">3</div>
+  <div>4</div>
+</div>

@@ -1,0 +1,34 @@
+The flex-direction property specifies the display-direction of flex items in the flex container.
+
+The flex-direction property can have one of the following values:
+    -row (l->r)
+    -column (t->b)
+    -row-reverse (r->l)
+    -column-reverse (b->t)
+
+
+.flex-container{
+    display: flex;
+    flex-direction: row; // horizontally left to right
+}
+
+flex-basis: It has to be set on the child/children. 
+The flex-basis property specifies the initial main size of a flex item (based on main axis).
+
+row main axis is horizontal, column main axis is vertical.
+
+
+* **`flex-direction: row` (default)** →
+
+  * **Main axis** = horizontal (left → right in LTR languages)
+  * **Cross axis** = vertical
+  * `justify-content` works **horizontally**
+  * `align-items` works **vertically**
+
+* **`flex-direction: column`** →
+
+  * **Main axis** = vertical (top → bottom)
+  * **Cross axis** = horizontal
+  * `justify-content` works **vertically**
+  * `align-items` works **horizontally**
+

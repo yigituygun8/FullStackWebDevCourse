@@ -1,0 +1,13 @@
+"flex-basis" property specifies the initial length of a flex item.
+
+Set the initial length of the third flex item to 200 pixels:
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-basis: 200px">3</div>
+  <div>4</div>
+</div>
+
+flex-grow: 1 → respects natural size, good when you want content-based differences.
+
+flex: 1 (same as flex: 1 1 0 / flex-grow flex-shrink flex-basis) → forces equal distribution regardless of content.

@@ -1,0 +1,2 @@
+comprehensive guide to CSS flexbox layout:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/

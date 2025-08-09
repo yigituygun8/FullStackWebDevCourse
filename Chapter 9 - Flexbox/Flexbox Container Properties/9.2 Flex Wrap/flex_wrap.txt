@@ -1,0 +1,6 @@
+The flex-wrap property specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line.
+
+The flex-wrap property can have one of the following values:
+    nowrap (default)
+    wrap: specifies that the flex items will wrap if necessary
+    wrap-reverse: specifies that the flex items will wrap if necessary, in reverse order

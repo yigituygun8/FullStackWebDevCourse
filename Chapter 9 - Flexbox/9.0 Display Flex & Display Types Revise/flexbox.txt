@@ -19,9 +19,16 @@ display: flex -> create flexbox, %100 width, occupying the line
 display: inline-flex -> sets the width as much as the container needs and other things can also go and occupy the same line
 
 The CSS properties we use for the flex container are:
-    flex-direction
-    flex-wrap
-    flex-flow
-    justify-content
-    align-items
-    align-content
+    flex-direction (row, column, row-reverse, column-reverse -> determines the main axis)
+    flex-wrap (nowrap (default), wrap, wrap-reverse)
+    flex-flow (sets both wrap and direction values)
+    justify-content (in the direction of main axis)
+    align-items (in the direction of cross axis (perpendicular to main axis))
+    align-content (in the direction of cross axis (perpendicular to main axis))
+
+On the children (flex items):
+    flex-basis
+    order
+    flex-grow
+    flex-shrink
+    align-self

@@ -1,0 +1,13 @@
+"order" property specifies the order of the flex items inside the flex container.
+
+The first flex item in the code does not have to appear as the first item in the layout.
+
+The order value must be a number, default value is 0.
+
+The order property can change the order of the flex items:
+<div class="flex-container">
+  <div style="order: 3">1</div>
+  <div style="order: 2">2</div>
+  <div style="order: 4">3</div>
+  <div style="order: 1">4</div>
+</div>

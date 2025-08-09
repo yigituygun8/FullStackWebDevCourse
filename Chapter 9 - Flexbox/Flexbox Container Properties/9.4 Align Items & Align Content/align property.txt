@@ -1,0 +1,26 @@
+The "align-items" property is used to align the flex items when they do not use all available space on the cross-axis.
+
+The align-items property can have one of the following values:
+    -center: positions the flex items in the middle of the container
+    -flex-start: positions the flex items at the top of the container
+    -flex-end: positions the flex items at the bottom of the container
+    -baseline: positions the flex items at the baseline of the container (the line upon which the text sits, you can see better demonstration with different font-sizes)
+    -stretch: stretches the flex items to fill the container (this is equal to "normal" which is default)
+    -normal: behaves like "stretch" (default)
+
+The align-content property is used to align the flex lines. (flex-wrap must be set to "wrap")
+The align-content property is similar to align-items, but instead of aligning flex "items", it aligns the flex "lines".
+
+The align-content property can have one of the following values:
+    -center
+    -flex-start
+    -flex-end
+    -space-around
+    -space-between
+    -space-evenly
+    -stretch
+
+| Property            | Axis it works on | When it works                                              | What it aligns                 |
+| ------------------- | ---------------- | ---------------------------------------------------------- | ------------------------------ |
+| **`align-items`**   | Cross axis       | Always                                                     | Each **item** in each **line** |
+| **`align-content`** | Cross axis       | Only if `flex-wrap` is on **and** there are multiple lines | The **lines themselves**       |

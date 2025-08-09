@@ -1,0 +1,51 @@
+https://appbrewery.github.io/flexbox-sizing-exercise/
+
+"flex-grow" property specifies how much a flex item will grow relative to the rest of the flex items
+The value must be a number, "default value is 0"
+
+Make the third flex item grow eight times faster than the other flex items:
+<div class="flex-container">
+  <div style="flex-grow: 1">1</div>
+  <div style="flex-grow: 1">2</div>
+  <div style="flex-grow: 8">3</div>
+</div>
+
+------------------------------------------------------
+
+"flex-shrink" property specifies how much a flex item will shrink relative to the rest of the flex items
+The value must be a number, "default value is 1"
+
+Do not let the third flex item shrink as much as the other flex items:
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div style="flex-shrink: 0">3</div>
+  <div>4</div>
+  <div>5</div>
+</div>
+
+
+content-width < width < flex-basis < min/max width (priority list)
+
+How flex-grow works:
+0 → Item will not grow beyond its base (flex-basis) size, even if there’s extra space.
+1 → Item will take part in growing when there’s extra space, sharing it equally with other growable items.
+2, 3, etc. → Item will grow more than others, proportionally.
+
+Example:
+If two items both have flex-grow: 1, they get equal extra space.
+If one has flex-grow: 2 and the other 1, the first gets twice as much extra space.
+-----------------------------------------------------------------------------------------
+How flex-shrink works:
+0 → Item will not shrink below its base size, even if there’s not enough space (might overflow).
+1 → Item will shrink proportionally to others with 1 when space is tight.
+2, 3, etc. → Item will shrink more quickly than others, proportionally.
+
+Example:
+If two items have flex-shrink: 1, they shrink evenly.
+If one has flex-shrink: 2 and the other 1, the first sacrifices twice as much space when shrinking.
+
+Defaults:
+flex-grow = 0 (no growing by default)
+flex-shrink = 1 (shrinking allowed by default)
+

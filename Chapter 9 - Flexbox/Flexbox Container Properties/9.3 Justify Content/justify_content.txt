@@ -1,0 +1,9 @@
+The justify-content property is used to align the flex items when they do not use all available space on the main-axis of the flex container.
+
+The justify-content property can have one of the following values:
+    -center: positions the flex items in the center of the container
+    -flex-start: positions the flex items at the beginning of the container (this is default)
+    -flex-end: positions the flex items at the end of the container
+    -space-around: displays the flex items with space around them
+    -space-between: displays the flex items with space between them (ilk elemanın solu ve sonuncunun sağı containerın kenarlarına yakın olacak default gibi)
+    -space-evenly: displays the flex items with equal space around them
